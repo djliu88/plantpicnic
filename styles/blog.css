@@ -1,0 +1,118 @@
+.article {
+	grid-area: ct;
+	margin-top: -25px;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 500px 1fr autp;
+	grid-gap: 25px;
+	grid-template-areas: 
+		"hero hero hero"
+		"art art art"
+		". auth .";
+}
+
+.hero {
+	grid-area: hero;
+	z-index: -99;
+}
+
+.hero img {
+	height: 800px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 0 0 5px 5px;
+}
+
+figcaption {
+	text-align: center;
+	font-size: 0.7em;
+}
+
+blockquote {
+	background: #9b7a2575;
+	border-radius: 5px;
+	margin: 1.5em 0em;
+	padding: 1.5em 1em 2em 1em;
+}
+
+blockquote::before {
+	color: #007350;
+    	content: open-quote;
+    	font-size: 6em;
+	line-height: 0em;
+	margin-right: 0.1em;
+	vertical-align: -0.45em;
+}
+
+blockquote::after {
+	content: close-quote;
+	color: #007350;
+	font-size: 6em;
+	line-height: 0em;
+	vertical-align: middle;
+	float: right;
+	bottom: -0.2em;
+	position: relative;
+}
+
+blockquote p {
+	text-align: center;
+	margin: -1em 4em 0.2em 4em;
+	font-style: oblique;
+	font-weight: 700;
+	color: #765322;
+}
+
+.art {
+	grid-area: 2/2;
+}
+
+.art h1 {
+	font-size: 3em;
+}
+
+.author {
+	grid-area: auth;
+	display: flex;
+	justify-content: center;
+}
+
+.authorbox {
+	display: inline-flex;
+	align-items: center;
+	background-color: #007350;
+	padding: 20px 40px;
+	border-radius: 10px
+}
+
+
+.authorimg {
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	margin-right: 20px;
+	border-radius: 9999px;
+}
+
+.authorimg img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+
+.authorinfo {
+	vertical-align: middle;
+	color: #FFFFFF;
+}
+
+.authorinfo h2 {
+	color: #FFFFFF;
+}
+
+
+@media (max-width: 769px) {
+	.article {
+		grid-template-columns: 3fr;
+	}
+}
