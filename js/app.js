@@ -6,9 +6,8 @@ const navbar = document.getElementById('navbar');
 */
 sections.forEach((section) => {
 	const listItem = document.createElement('li');
-	const listName = section.id.slice(0, -1);
-	const listNumber = section.id.slice(7);
-	listItem.innerHTML = `<a href="#${section.id}">${listName} ${listNumber}</a>`;
+	const navText = section.getAttribute('data-nav');
+	listItem.innerHTML = `<a href="#${section.id}">${navText}</a>`;
 	navbar.querySelector('ul').appendChild(listItem);
 });
 
