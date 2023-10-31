@@ -76,10 +76,10 @@ section img {
 
 .form {
 	width: 100%;
-    grid-column: span 2;
-    height: 50%;
-    border: 0;
-    border-radius: 15px;
+	grid-column: span 2;
+	height: 70%;
+	border: 0;
+	border-radius: 15px;
 }
 
 /* Footer Styling */
