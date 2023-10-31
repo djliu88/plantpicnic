@@ -43,9 +43,9 @@ body {
 
 section img {
 	width: 100%;
-	max-width: 900px;
+	max-width: 600px;
 	grid-column: span 2;
-    justify-self: center;
+   	justify-self: center;
 }
 
 #section2 iframe {
